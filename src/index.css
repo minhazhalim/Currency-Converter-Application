@@ -1,0 +1,145 @@
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;800;900&display=swap);
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: 'Montserrat',sans-serif;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-image: url('bg.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color:#030728;
+}
+#root {
+  width: 100%;
+}
+.currency-converter {
+  max-width: 410px;
+  margin: 0px auto;
+  padding: 40px 30px 50px;
+  border: 1px solid rgba(255,255,255,0.3);
+  border-radius: 8px;
+  backdrop-filter: blur(30px);
+  background-color:rgba(2,7,40,0.5);
+  box-shadow: 0px 8px 32px rgba(0,0,0,0.5);
+}
+.currency-converter .converter-title {
+  color:#fff;
+  font-size: 1.65rem;
+  font-weight: 600;
+  text-align: center;
+}
+.currency-converter .converter-form {
+  margin-top: 45px;
+}
+.currency-converter .converter-form .form-group {
+  display: flex;
+  margin-bottom: 30px;
+  flex-direction: column;
+}
+.currency-converter .converter-form .form-group .form-label {
+  color:#fff;
+  font-size: 1rem;
+  font-weight: 500;
+  display: block;
+  margin-bottom: 9px;
+}
+.currency-converter .converter-form .form-group .form-input {
+  border: 1px solid rgba(255,255,255,0.5);
+  border-radius: 6px;
+  outline: none;
+  background-color:rgba(255,255,255,0.1);
+  color:#fff;
+  font-size: 1.1rem;
+  font-weight: 500;
+  min-height: 48px;
+}
+.currency-converter .converter-form .form-currency-group {
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.currency-converter .converter-form .form-currency-group .currency-select {
+  display: flex;
+  align-items: center;
+  padding: 0px 10px;
+  min-height: 45px;
+  background-color:rgba(255,255,255,0.1);
+  border: 1px solid rgba(255,255,255,0.5);
+  border-radius: 6px;
+}
+.currency-converter .converter-form .form-currency-group .currency-select img {
+  width: 25px;
+}
+.currency-converter .converter-form .form-currency-group .currency-select .currency-dropdown {
+  border: none;
+  outline: none;
+  background: none;
+  color:#fff;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0px 10px 0px 5px;
+}
+.currency-converter .converter-form .form-currency-group .currency-select .currency-dropdown option {
+  color:#000;
+  font-weight: 500;
+}
+.currency-converter .converter-form .form-currency-group .swap-icon {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 25px;
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 50%;
+  background-color:rgba(255,255,255,0.1);
+  transition: 0.2s ease;
+}
+.currency-converter .converter-form .form-currency-group .swap-icon:hover {
+  background-color:rgba(255,255,255,0.3);
+}
+.currency-converter .converter-form .submit-button {
+  width: 100%;
+  min-height: 52px;
+  border: none;
+  border-radius: 6px;
+  outline: none;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 5px;
+  transition: 0.2s ease;
+}
+.currency-converter .converter-form .submit-button.loading {
+  opacity: 0.7;
+  pointer-events: none;
+}
+.currency-converter .converter-form .submit-button:hover {
+  background-color:rgba(255,255,255,0.7);
+}
+.currency-converter .converter-form .exchange-rate-result {
+  background-color:rgba(255,255,255,0.15);
+  color:#fff;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 25px;
+  padding: 25px 0px;
+  border-radius: 6px;
+  letter-spacing: 0.5px;
+}
+@media only screen and (max-width:640px){
+  body {
+    padding: 0px 10px;
+  }
+  .currency-converter {
+    padding: 30px 20px 40px;
+  }
+}
